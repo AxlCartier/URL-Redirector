@@ -1,0 +1,11 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    gap: 10px;
+    height: 90vh;
+}

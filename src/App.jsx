@@ -11,11 +11,11 @@ export default function App() {
   const newStr = str.slice(0,str.indexOf('/', 8))
 
   const myFunction = () => {
-    if (!url.includes("https://") || (url.endsWith("com", "net", "org"))) {
+    if (!url.includes("https://")) {
       alert("Please insert a valid URL")
-    } 
-
-      else {
+    } else if (url.endsWith(".com") || url.endsWith(".net") || url.endsWith(".org")) {
+      alert("Not able to redirect")
+    } else {
       setClicked(true)
       confetti()
       console.log(newStr)
